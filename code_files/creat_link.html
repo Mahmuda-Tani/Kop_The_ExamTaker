@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Cantora One' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Before_Starts</title>
+
+
+    <style>
+         *{
+             font-family: "Cantora One";
+             margin:0;
+             padding:0;
+
+          }
+         
+         body{
+             /* background: #000 url(bg.jpg); */
+             background-attachment: fixed;
+             background-blend-mode: hard-light;
+             
+
+         }
+
+         .logo
+         {
+             /* height: 10px;
+             width:  10px;*/
+             
+             margin-top:-5px; 
+             margin-left:65px;
+             
+         }
+         .logo_heading h2
+         {
+            text-align: center;
+            font-style: 10em;
+            line-height: 0.7em;
+            color:rgb(38, 86, 114);
+            margin-top:-60px;
+            font-size: 1em;
+            margin-left: -1110px;
+         }
+         
+         .profile
+         {
+            
+             text-align: center;
+            font-style: 10em;
+            line-height: 0.7em;
+            color:rgb(38, 86, 114);
+            margin-top:-30px;
+            font-size: 1em;
+            margin-left: 1150px;
+            font-weight: 400;
+         }
+      
+         .button
+         {
+             margin-left: 555px;
+             margin-top: 80px;
+         }
+           
+         .button h3
+         {
+              font-size: 1.3rem;
+              font-weight: 300;
+         }
+         .button table
+         {
+            border-collapse: separate;
+            border-spacing: 0 50px;
+         }
+         .button td button
+         {
+            padding: 5px;
+            font-size: 1.1rem;
+            text-align: center;
+	        border:1px solid black;
+	        width: 150px;
+	        height: 35px;
+	        color: rgb(255, 255, 255);
+	        transition: 0.25s;
+            background-color:#3f4246;
+            border-radius: 3px;
+            display: block;
+         }
+         .button td button:hover
+         {
+             opacity: .7;
+         }
+         .button table td
+         {
+               padding: 15px;
+         }
+
+         .enter_email-a
+         {
+             margin-top: -5px;
+             margin-left: 500px;
+             border: 1px solid #000000;
+             height:300px;
+             width:500px;
+             display: none;
+         }
+
+         .enter_email-b
+         {
+             margin-top: -5px;
+             margin-left: 500px;
+             border: 1px solid #000000;
+             height:300px;
+             width:500px;
+         }
+
+         .show_number
+         {
+             margin-top: 10px;
+             margin-left: 450px;
+             height:35px;
+             width: 35px;
+             border:1px solid black
+         }
+
+         .heading 
+         {
+            
+             margin-top: 5px;
+             margin-left: 40px;
+
+         }
+         .heading h2
+         {
+            font-size: 1.2rem;
+             font-weight: 400;
+         }
+
+         .x
+         {
+             margin-top: 5px;
+             margin-left: 40px;
+         }
+         .x input[type="text"]
+         {
+                height: 40px;
+                width: 400px;
+                margin-top: 30px;
+         }
+
+
+         .y
+         {
+             margin-top: 5px;
+             margin-left: 40px;
+         }
+         .y button
+         {
+            display: block;
+            text-align: center;
+            border:1px solid #000000;	;
+            border-radius: 0px;
+            transition: 0.25s;
+            color: rgb(255, 255, 255);
+            margin-left: 150px;
+            background-color: #3f4246;
+            width: 120px;
+            font-weight: 300;
+            height: 35px;
+            padding:5px;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-top:35px ;
+         }
+
+
+        .y button:hover
+        {
+            opacity: .7;
+        }
+        
+        .get_link
+        {
+            margin-top: 30px;
+            margin-left: 700px;
+        }
+        .get_link a
+        {
+            font-size: 1.1rem;
+        }
+        .hide
+        {
+            display: none;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="logo">
+        
+        <img src="logo1.jpg" alt="logo" width="120" height="120">
+    </div>
+
+    <div class="logo_heading">
+           
+        <h2>The<span style="color:#4a4e69; font-size: 1.4rem;">Exam</span>Taker</h2>
+    </div>
+     
+    <div class="profile">
+        <a href="myProfile.html">MyProfile </a><a href="logout.php">  | LogOut</a>
+    </div>
+
+
+
+    <div class=container>
+          <div class="button">
+                <table>
+                    <tr><td><h3>Make the Exam link </h3></td><td><button id="btn">Private</button></td></tr>
+                </table>
+          </div>
+
+          <div class="enter_email-a" id="st">
+                <div class="show_number"></div>
+                <div class="heading"><h2>Enter Examinee's Email:</h2></div>
+
+                <div class="form_div">
+                        <form action="" class="form">
+                            <div class="x"><input type="text" name="emal"></div>
+                            <div class="y"><button>Submit</button></div>
+                            
+                            
+                        </form>
+                </div>
+
+                
+          </div>
+
+          <div class="get_link"><a href="the_link.html">Get Exam Link</a></div>
+    </div>
+     
+    <script src="link_private.js"></script>
+
+</body>
+
+</html>

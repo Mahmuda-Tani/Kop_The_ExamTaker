@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Cantora One' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>login</title>
+
+
+    <style>
+         *{
+             font-family: "Cantora One";
+             margin:0;
+             padding:0;
+
+          }
+         
+         body{
+             /* background: #000 url(bg.jpg); */
+             background-attachment: fixed;
+             background-blend-mode: hard-light;
+             
+
+         }
+
+         .logo
+         {
+             /* height: 10px;
+             width:  10px;*/
+             
+             margin-top:-5px; 
+             margin-left:65px;
+             
+         }
+         .logo_heading h2
+         {
+            text-align: center;
+            font-style: 10em;
+            line-height: 0.7em;
+            color:rgb(38, 86, 114);
+            margin-top:-60px;
+            font-size: 1em;
+            margin-left: -1110px;
+         }
+         
+         .profile
+         {
+            
+             text-align: center;
+            font-style: 10em;
+            line-height: 0.7em;
+            color:rgb(38, 86, 114);
+            margin-top:-30px;
+            font-size: 1em;
+            margin-left: 1150px;
+            font-weight: 400;
+         }
+      
+      
+        .login_div
+        {
+            margin-top: 200px;
+            margin-left: 300px;
+            /* height:400px; */
+            width: 780px;
+            /* border:1px solid black; */
+            align-items: center;
+        }
+
+        .login-form
+        {   
+            /* background-color:#9ea1b9; */
+            padding: 10px;
+	        position: absolute;
+	        top: 51%;
+	        left: 50%;
+	        transform: translate(-50%,-50%);
+         	border: 0px solid #0f0f0f;
+            width: 550px;
+            height: 320px;
+            /* box-shadow: 0 0 5px 0 #4a4e69; */
+            /* border-radius: 20px; */
+           /* margin-left:7px; */
+           box-shadow: 0 0 10px 0 #6a6b70;
+        }
+
+    .login-form input[type="password"],.login-form input[type="email"]
+       {
+	
+  
+	text-align: center;
+	border:2px solid #4a4e69;
+	width: 300px;
+	height: 30px;
+	color: black;
+	transition: 0.25s;
+    background-color:#f4f3ee;
+    padding:3px;
+    border-radius: 0px;
+    display: block;
+    text-align: center;
+  
+ }
+.login-form input[type="text"]:focus,.login-form input[type="password"]:focus,.login-form input[type="email"]:focus{
+	
+	background-color: #f7f7f8;
+	width:312px;
+    
+}
+
+.login-form label {
+	color:#030303;
+	font-size: 18px;
+	padding: px;
+}
+
+        table {
+           border-collapse: separate;
+           border-spacing: 0 35px;
+           display: block;
+         }
+
+         td {
+            width: 140px;
+            text-align: center;
+            padding: 0px;
+           }
+
+           th{
+            text-align: center;
+            padding: 0px;
+            font-size: 1.3rem;
+            font-weight: 300;
+            /* letter-spacing: .1rem; */
+            word-spacing: .5rem;
+           
+           }
+           
+
+.login-form button[type="submit"]{
+
+
+display: block;
+text-align: center;
+border:1px solid #4e4e70;	;
+border-radius: 0px;
+transition: 0.25s;
+color: rgb(19, 18, 18);
+margin-left: 240px;
+background-color: #f4f3ee;
+width: 75px;
+font-weight: 300;
+height: 30px;
+/* box-shadow: 0 0 3x 0 #4a4e69; */
+
+
+
+}
+.login-form button[type="submit"]:hover{
+opacity: .8;
+}
+
+.forgot_pass
+{
+    margin-left: 890px;
+    margin-top: 495px
+}
+
+th h2
+{
+    margin-left: 100px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="logo">
+        
+        <img src="logo1.jpg" alt="logo" width="120" height="120">
+    </div>
+
+    <div class="logo_heading">
+           
+        <h2>The<span style="color:#4a4e69; font-size: 1.4rem;">Exam</span>Taker</h2>
+    </div>
+     
+    <div class="profile">
+        <a href="login.html">Login </a><a href="register.html">  | Register</a>
+    </div>
+        
+
+
+     <div class="login_div">
+
+        <form action="" mathod="POST" class="login-form">
+
+            <table class="login-table">
+                  
+                <tr><th colspan="3"><h2>Login into Kope</h2></th><td> </td></tr>
+                <tr><td> <label>Email</label></td><td><input type="email" name="email" placeholder="email" required></td></tr>
+                <tr><td> <label>Password</label></td><td><input type="password" name="password" placeholder="Password" required></td></tr>
+                
+                <tr><td colspan="2"><button type="submit">Login</button></td></tr>
+
+            </table>
+        </form>
+       
+        
+     </div>
+
+     <div class="forgot_pass"><a href="landing.html">Forgot your password?</a></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Cantora One' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>set-exam</title>
+
+
+    <style>
+         *{
+             font-family: "Cantora One";
+             margin:0;
+             padding:0;
+
+          }
+         
+         body{
+             /* background: #000 url(bg.jpg); */
+             background-attachment: fixed;
+             background-blend-mode: hard-light;
+           
+            
+
+         }
+
+         .logo
+         {
+             /* height: 10px;
+             width:  10px;*/
+             
+             margin-top:-5px; 
+             margin-left:65px;
+             
+         }
+         .logo_heading h2
+         {
+            text-align: center;
+            font-style: 10em;
+            line-height: 0.7em;
+            color:rgb(38, 86, 114);
+            margin-top:-60px;
+            font-size: 1em;
+            margin-left: -1110px;
+         }
+         
+         .profile
+         {
+            
+             text-align: center;
+            font-style: 10em;
+            line-height: 0.7em;
+            color:rgb(38, 86, 114);
+            margin-top:-30px;
+            font-size: 1em;
+            margin-left: 1150px;
+            font-weight: 400;
+         }
+      
+      
+        .setExam_div
+        {
+            margin-top: 200px;
+            margin-left: 300px;
+            /* height:400px; */
+            width: 800px;
+            /* border:1px solid black; */
+            align-items: center;
+        }
+
+        .setExam_form
+        {   
+            /* background-color:#9ea1b9; */
+            padding: 10px;
+	        position: absolute;
+	        top: 54%;
+	        left: 49.5%;
+	        transform: translate(-50%,-50%);
+
+         	border: 0px solid #0f0f0f;
+            width: 530px;
+            height: 530px;
+            box-shadow: 0 0 15px 0 #6d6d74;
+            /* border-radius: 20px; */
+           /* margin-left:7px; */
+          
+        }
+
+    .setExam_form input[type="password"],.setExam_form input[type="email"],.setExam_form input[type="text"],.setExam_form select
+       {
+	
+  
+	text-align: center;
+	border:2px solid #4a4e69;
+	width: 300px;
+	height: 30px;
+	color: black;
+	transition: 0.25s;
+    background-color:#f4f3ee;
+    padding:3px;
+    border-radius: 0px;
+    display: block;
+    text-align: center;
+  
+ }
+.setExam_form input[type="text"]:focus,.setExam_form input[type="password"]:focus,.setExam_form input[type="email"]:focus,.setExam_form select:focus{
+	
+	background-color: #f7f7f8;
+	width:312px;
+    
+}
+
+.setExam_form label {
+	color:#030303;
+	font-size: 18px;
+	padding: 1px;
+}
+
+        table {
+           border-collapse: separate;
+           border-spacing: 0 6px;
+           display: block;
+         }
+
+         td {
+            width: 150px;
+            text-align: center;
+            padding: 5px;
+           }
+
+           th{
+            text-align: center;
+            padding: 5px;
+            font-size: 1.3rem;
+            font-weight: 300;
+            /* letter-spacing: .1rem; */
+            word-spacing: .5rem;
+           
+           }
+
+           
+.setExam_form button[type="submit"]{
+
+
+display: block;
+text-align: center;
+border:1px solid #000000;	;
+border-radius: 0px;
+transition: 0.25s;
+color: rgb(19, 18, 18);
+margin-left: 250px;
+background-color: #f4f3ee;
+width: 75px;
+font-weight: 300;
+height: 30px;
+/* box-shadow: 0 0 3x 0 #4a4e69; */
+
+
+
+}
+.setExam_form button[type="submit"]:hover{
+opacity: .8;
+}
+
+           
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="logo">
+        
+        <img src="logo1.jpg" alt="logo" width="120" height="120">
+    </div>
+
+    <div class="logo_heading">
+           
+        <h2>The<span style="color:#4a4e69; font-size: 1.4rem;">Exam</span>Taker</h2>
+    </div>
+     
+    <div class="profile">
+        <a href="myProfile.html">MyProfile </a><a href="logout.php">  | LogOut</a>
+    </div>
+
+        
+
+
+     <div class="setExam_div">
+
+        <form action="question.html" mathod="POST" class="setExam_form">
+                
+            <h3 style="text-align: center; margin-top: 15px; font-weight: 400;">Set Exam</h3>
+            
+
+            <table class="setExam-table">
+                  
+              
+                <tr><td> <label>Exam Name</label></td><td><input type="text" name="name" placeholder="Exam name" required></td></tr>
+                <tr><td> <label>Class</label></td><td><input type="text" name="class" placeholder="class" required></td></tr>
+                <tr><td> <label>Exam Date</label></td><td><input type="text" name="date" placeholder="Date" required></td></tr>
+                <tr><td> <label>Exam Time</label></td><td><input type="text" name="time" placeholder="Exam time" required></td></tr>
+                <tr><td> <label>Total mark </label></td><td><input type="text" name="mark" placeholder="Total mark" required></td></tr>
+                <tr><td> <label>Passing mark</label></td><td><input type="text" name="name" placeholder="Passing mark" required></td></tr>
+                <tr><td> <label>Total question</label></td><td><input type="text" name="total_question" placeholder="Total question" required></td></tr>
+               
+                <tr><td> <label>Question Type</label></td>
+                    <td><select name="select" id="select" style="width: 310px;height: 40px;">
+                    <option value="mcq" id="o">Creat Mcq Question</option>
+                    <option value="desq" id="d">Creat Descriptive Question</option>
+                </select>
+               </td></tr>
+
+               <tr><td colspan="2"><button type="submit">Submit</button></td></tr>
+
+            </table>
+
+           
+        </form>
+       
+     </div>
+
+
+
+
+</body>
+
+</html>

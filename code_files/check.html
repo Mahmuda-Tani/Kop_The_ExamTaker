@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Cantora One' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>check</title>
+
+
+    <style>
+            *{
+             font-family: "Cantora One";
+             margin:0;
+             padding:0;
+
+          }
+         
+         body{
+             /* background: #000 url(bg.jpg); */
+             background-attachment: fixed;
+             background-blend-mode: hard-light;
+             
+
+         }
+
+         .logo
+         {
+             /* height: 10px;
+             width:  10px;*/
+             
+             margin-top:-5px; 
+             margin-left:65px;
+             
+         }
+         .logo_heading h2
+         {
+            text-align: center;
+            font-style: 10em;
+            line-height: 0.7em;
+            color:rgb(38, 86, 114);
+            margin-top:-60px;
+            font-size: 1em;
+            margin-left: -1110px;
+         }
+         
+         .profile
+         {
+            
+             text-align: center;
+            font-style: 10em;
+            line-height: 0.7em;
+            color:rgb(38, 86, 114);
+            margin-top:-30px;
+            font-size: 1em;
+            margin-left: 1150px;
+            font-weight: 400;
+         }
+      
+         .container
+         {
+             border: 0px solid black;
+             height:750px;
+             width:1000px;
+             margin-top:90px;
+             margin-left:250px ;
+             border-radius: 5px;
+             box-shadow: 0 0 10px 0 #000000;
+             /* background-color: #f8f9fa; */
+            
+         }
+         :placeholder-shown
+        {
+          font-size: 1rem;
+        }
+        
+        .heading
+        {
+              /* margin-top:-10px;  */
+              margin-left:430px;
+             
+             
+        }
+        .heading h2
+        {        
+            line-height: 0.7em;
+            color:rgb(50, 39, 90);
+            /* font-size: 1.2rem; */
+            font-weight: 500;
+            margin-top: 5px;
+           
+        }
+        .qlabel
+        {
+            margin-top:50px; 
+            margin-left:200px;
+            color:#000000;
+	        font-size: 1.1rem;
+	        /* padding: 1px;
+            */
+        }
+       
+      
+        .qinput
+        {
+            margin-top:20px; 
+            margin-left:200px;
+          
+           
+        }
+        .qinput input[type="text"]
+        {
+            text-align: center;
+	        border:1px solid black;
+	        width: 590px;
+	        height: 120px;
+	        color: black;
+	        transition: 0.25s;
+            background-color:#ffffff;
+            padding:3px;
+            border-radius: 0px;
+            display: block;
+            text-align: center;
+        }
+
+        
+        .m_label
+        {
+            margin-top:50px; 
+            margin-left:200px;
+            color:#000000;
+	        font-size: 1.1rem;
+	        /* padding: 1px;
+            */
+        }
+       
+      
+        .m_input
+        {
+            margin-top:-30px; 
+            margin-left:400px;
+          
+           
+        }
+        .m_input input[type="text"]
+        {
+            text-align: center;
+	        border:1px solid black;
+	        width: 390px;
+	        height: 30px;
+	        color: black;
+	        transition: 0.25s;
+            background-color:#ffffff;
+            padding:3px;
+            border-radius: 0px;
+            display: block;
+            text-align: center;
+        }
+
+
+        .i_label
+        {
+            margin-top:50px; 
+            margin-left:200px;
+            color:#000000;
+	        font-size: 1.1rem;
+	        /* padding: 1px;
+            */
+        }
+       
+      
+        .i_input
+        {
+            margin-top:20px; 
+            margin-left:200px;
+          
+           
+        }
+        .i_input input[type="text"]
+        {
+            text-align: center;
+	        border:1px solid black;
+	        width: 590px;
+	        height: 120px;
+	        color: black;
+	        transition: 0.25s;
+            background-color:#ffffff;
+            padding:3px;
+            border-radius: 0px;
+            display: block;
+            text-align: center;
+        }
+
+
+
+
+.tab
+ {
+  display: none;
+ }
+.btn{
+  margin-top:8px; 
+  margin-left:590px;
+}
+button {
+  
+            
+            display: inline;
+            text-align: center;
+            border:1px solid #000000;	;
+            border-radius: 0px;
+            transition: 0.25s;
+            color: rgb(255, 255, 255);
+            margin-left: 250px;
+            background-color: #363131;
+            width: 100px;
+            font-weight: 300;
+            height: 40px;
+            padding:5px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+ 
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="logo">
+       <img src="logo1.jpg" alt="logo" width="120" height="120">
+    </div>
+    <div class="logo_heading">
+           
+        <h2>The<span style="color:#4a4e69; font-size: 1.4rem;">Exam</span>Taker</h2>
+    </div>
+    <div class="profile">
+        <a href="myProfile.html">MyProfile </a><a href="logout.php">  | LogOut</a>
+    </div>
+
+
+
+    
+
+
+    <div class="container">
+         
+          <div class="form">
+                  
+               <form action="set_exam.html" id="regForm">
+                    
+                    <br>
+                    <div class="tab">
+                   
+                      <br>
+                      <div class="heading"><h2>Set question</h2></div> <div></div>
+                      
+                      <div class="qlabel"><label>Enter the question :</label></div>
+                      <div class="qinput"><input type="text" name="question" placeholder="Type your question here"></div>
+                      
+                      <div class="m_label"><label>Mark for the question:</label></div>
+                      
+                      <div class="m_input"><input type="text" name="mark" placeholder="Mark for the above question"></div>
+                       <br><br>
+                      <div class="i_label"><label>Instructions for the question:</label></div>
+                      
+                      <div class="i_input"><input type="text" name="ins" placeholder="Instructions for the above question"></div>
+    
+                       
+                    </div>
+
+                   
+
+                  </div>
+
+
+                  <div class="tab">
+                    
+                    <br>
+                    <div class="heading"><h2>Set question</h2></div> <div></div>
+                    
+                    <div class="qlabel"><label>Enter the question :</label></div>
+                    <div class="qinput"><input type="text" name="question" placeholder="Type your question here"></div>
+                    
+                    <div class="m_label"><label>Mark for the question:</label></div>
+                    
+                    <div class="m_input"><input type="text" name="mark" placeholder="Mark for the above question"></div>
+                     <br><br>
+                    <div class="i_label"><label>Instructions for the question:</label></div>
+                    
+                    <div class="i_input"><input type="text" name="ins" placeholder="Instructions for the above question"></div>
+  
+                    
+  
+                  </div>
+
+
+                  <div class="tab">
+                  
+                    <br>
+                    <div class="heading"><h2>Set question</h2></div> <div></div>
+                    
+                    <div class="qlabel"><label>Enter the question :</label></div>
+                    <div class="qinput"><input type="text" name="question" placeholder="Type your question here"></div>
+                    
+                    <div class="m_label"><label>Mark for the question:</label></div>
+                    
+                    <div class="m_input"><input type="text" name="mark" placeholder="Mark for the above question"></div>
+                     <br><br>
+                    <div class="i_label"><label>Instructions for the question:</label></div>
+                    
+                    <div class="i_input"><input type="text" name="ins" placeholder="Instructions for the above question"></div>
+  
+                    
+  
+                  </div>
+
+                  <div >
+                    <div class="btn">
+                      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    </div>
+                  </div>
+                  <!-- Circles which indicates the steps of the form: -->
+                  
+
+
+               </form>
+
+               
+
+          </div>
+
+          <div style="text-align:center;margin-top:35px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+           
+          </div>
+
+    </div>
+
+    <script>
+      var currentTab = 0; // Current tab is set to be the first tab (0)
+      showTab(currentTab); // Display the current tab
+      
+      function showTab(n) {
+       
+        var x = document.getElementsByClassName("tab");
+        x[n].style.display = "block";
+        
+        if (n == 0) {
+          document.getElementById("prevBtn").style.display = "none";
+        } else {
+          document.getElementById("prevBtn").style.display = "inline";
+        }
+        if (n == (x.length - 1)) {
+          document.getElementById("nextBtn").innerHTML = "Submit";
+        } else {
+          document.getElementById("nextBtn").innerHTML = "Next";
+        }
+      
+        fixStepIndicator(n)
+      }
+      
+      function nextPrev(n) {
+        
+        var x = document.getElementsByClassName("tab");
+      
+        if (n == 1 && !validateForm()) return false;
+       
+        x[currentTab].style.display = "none";
+       
+        currentTab = currentTab + n;
+   
+        if (currentTab >= x.length) {
+         
+          document.getElementById("regForm").submit();
+          return false;
+        }
+       
+        showTab(currentTab);
+      }
+      
+      function validateForm() {
+    
+        var x, y, i, valid = true;
+        x = document.getElementsByClassName("tab");
+        y = x[currentTab].getElementsByTagName("input");
+       
+        for (i = 0; i < y.length; i++) {
+        
+          if (y[i].value == "") {
+
+            y[i].className += " invalid";
+            valid = false;
+          }
+        }
+        
+        if (valid) {
+          document.getElementsByClassName("step")[currentTab].className += " finish";
+        }
+        return valid; 
+      }
+      
+      function fixStepIndicator(n) {
+       
+        var i, x = document.getElementsByClassName("step");
+        for (i = 0; i < x.length; i++) {
+          x[i].className = x[i].className.replace(" active", "");
+        }
+        
+        x[n].className += " active";
+      }
+      </script>
+      
+</body>
+
+</html>
